@@ -19,8 +19,6 @@ window.addEventListener("load", function(){
          alert("ALL FIELDS ARE REQUIRED!");
       } else if (isNaN(fuelInput.value) || isNaN(cargoMassInput.value) || !isNaN(pilotInput.value) || !isNaN(copilotInput.value)) {
          alert("PLEASE ENTER VALID ENTRIES!");
-<<<<<<< HEAD
-<<<<<<< HEAD
       } else {
          faultyItems.style.visibility = "visible";
          pilotStatus.innerHTML = `Pilot ${pilotInput.value}: Ready`;
@@ -46,37 +44,6 @@ window.addEventListener("load", function(){
             cargoStatus.innerHTML = "Cargo mass low enough for launch";
          }
       }
-=======
-=======
->>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
-      }
-
-      faultyItems.style.visibility = "visible";
-      pilotStatus.innerHTML = `Pilot ${pilotInput.value}: Ready`;
-      copilotStatus.innerHTML = `Co-Pilot ${copilotInput.value}: Ready`
-       
-      if (fuelInput.value < 10000 && cargoMassInput.value > 10000){
-         launchStatus.innerHTML = "Shuttle not ready for launch";
-         launchStatus.style.color = "red";
-         fuelStatus.innerHTML = "There is not enough fuel for the journey";
-         cargoStatus.innerHTML = "There is too much mass for the shuttle to take off";
-      } else if (fuelInput.value < 10000){
-         launchStatus.innerHTML = "Shuttle not ready for launch";
-         launchStatus.style.color = "red";
-         fuelStatus.innerHTML = "There is not enough fuel for the journey";
-      } else if (cargoMassInput.value > 10000){
-         launchStatus.innerHTML = "Shuttle not ready for launch";
-         launchStatus.style.color = "red";
-         cargoStatus.innerHTML = "There is too much mass for the shuttle to take off";
-      } else{
-         launchStatus.innerHTML = "Shuttle is ready for launch"
-         launchStatus.style.color = "green"
-      }
-
-<<<<<<< HEAD
->>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
-=======
->>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
       event.preventDefault()
    });
    let json = []
