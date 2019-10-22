@@ -20,6 +20,7 @@ window.addEventListener("load", function(){
       } else if (isNaN(fuelInput.value) || isNaN(cargoMassInput.value) || !isNaN(pilotInput.value) || !isNaN(copilotInput.value)) {
          alert("PLEASE ENTER VALID ENTRIES!");
 <<<<<<< HEAD
+<<<<<<< HEAD
       } else {
          faultyItems.style.visibility = "visible";
          pilotStatus.innerHTML = `Pilot ${pilotInput.value}: Ready`;
@@ -46,6 +47,8 @@ window.addEventListener("load", function(){
          }
       }
 =======
+=======
+>>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
       }
 
       faultyItems.style.visibility = "visible";
@@ -70,6 +73,9 @@ window.addEventListener("load", function(){
          launchStatus.style.color = "green"
       }
 
+<<<<<<< HEAD
+>>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
+=======
 >>>>>>> 0dc71f3f4390e6631999799ee01982303dc5781c
       event.preventDefault()
    });
